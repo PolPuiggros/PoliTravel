@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/myGreen"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btnGoBackAddInterestPoints"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:scaleType="centerInside"
+            android:background="@color/myGreen"
+            android:layout_marginLeft="7dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:fontFamily="@font/baloo"
+            android:text="Add interest points"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:paddingRight="15dp"
+            android:paddingTop="6dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"
+        android:text="Interest point name"
+        style="@style/add_package_field"/>
+    <EditText
+        android:id="@+id/InterestPointNameEditText"
+        android:layout_marginLeft="40dp"
+        style="@style/Editexts"/>
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:text="Lattitude &amp; longitude"
+        style="@style/add_package_field"/>
+    <EditText
+        android:layout_marginLeft="40dp"
+        android:id="@+id/InterestPointCoordinatesEditText"
+        style="@style/Editexts" />
+    <Button
+        android:id="@+id/ButtonAddPoint"
+        android:layout_marginTop="15dp"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        style="@style/buttonSecondary"
+        android:layout_gravity="center"
+        android:text="Add Point"/>
+    <ListView
+        android:id="@+id/listViewPoints"
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/BtnInterestPointsSaveAndExit"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        style="@style/buttonPrimary"
+        android:layout_gravity="center"
+        android:text="Save interest points"/>
+</LinearLayout>

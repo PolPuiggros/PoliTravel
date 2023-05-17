@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/myGreen"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnGoBackFromNewPackage"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:scaleType="centerInside"
+                android:background="@color/myGreen"
+                android:layout_marginLeft="7dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:fontFamily="@font/baloo"
+                android:text="New package"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:paddingRight="15dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="17dp"
+            android:text="Package name"
+            style="@style/add_package_field" />
+        <EditText
+            android:id="@+id/newPackageName"
+            style="@style/Editexts">
+        </EditText>
+        <TextView
+            android:layout_marginTop="6dp"
+            android:text="Duration"
+            style="@style/add_package_field"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="number"
+                android:id="@+id/EditTextDuration"
+                android:layout_marginLeft="20dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+            </EditText>
+            <Spinner
+                android:id="@+id/spinnerUnitats"
+                android:layout_gravity="center"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Transport method"
+            style="@style/add_package_field"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="90dp">
+            <ImageButton
+                android:id="@+id/newPackageBtnCar"
+                style="@style/imagebuttons"
+                android:src="@drawable/car_green" />
+            <ImageButton
+                android:id="@+id/newPackageBtnAvio"
+                android:src="@drawable/plane_unselected"
+                style="@style/imagebuttons"/>
+            <ImageButton
+                android:id="@+id/newPackageBtnTrain"
+                style="@style/imagebuttons"
+                android:src="@drawable/train_unselected" />
+            <ImageButton
+                android:id="@+id/newPackageBtnBoat"
+                style="@style/imagebuttons"
+                android:src="@drawable/boat_unselected" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="17dp"
+            android:text="Package Image"
+            style="@style/add_package_field"/>
+        <ImageView
+            android:id="@+id/packageImgPreview"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="165dp"
+            android:src="@drawable/logo_white"
+            android:scaleType="centerCrop" />
+        <Button
+            android:id="@+id/setAPackageImage"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="47dp"
+            style="@style/buttonSecondary"
+            android:text="Explore" />
+        <TextView
+            android:layout_marginTop="17dp"
+            android:text="Starting point name"
+            style="@style/add_package_field"/>
+        <EditText
+            android:id="@+id/NewPackageStartingPointNameEditText"
+            style="@style/Editexts"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="Lattitude &amp; longitude"
+            android:layout_marginLeft="45dp"
+            style="@style/add_package_field"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/NewPackageStartingPointCoordinatesEditText"
+            style="@style/EditextsTabed" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Ending point name"
+            style="@style/add_package_field"/>
+        <EditText
+            android:id="@+id/NewPackageEndingPointNameEditText"
+            style="@style/Editexts"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="Lattitude &amp; longitude"
+            android:layout_marginLeft="45dp"
+            style="@style/add_package_field"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/NewPackageEndingPointCoordinatesEditText"
+            style="@style/EditextsTabed" />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:text="Interest Points"
+            style="@style/add_package_field"
+            android:layout_marginLeft="40dp"/>
+        <com.example.politravel.NonScrollListView
+            android:id="@+id/listViewInterestPointsPreview"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/BtnAddInterestPoints"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            style="@style/buttonSecondary"
+            android:text="Add" />
+        <TextView
+            android:layout_marginTop="17dp"
+            android:text="Route overview"
+            style="@style/add_package_field"/>
+
+        <fragment
+            android:id="@+id/mapaNewPackage"
+            android:layout_marginTop="10dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="200dp" />
+        <Button
+            android:id="@+id/createNewPackage"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            style="@style/buttonPrimary"
+            android:text="Create new package"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+</ScrollView>

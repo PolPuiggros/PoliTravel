@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="text_subentries">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/abeezee</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="first_last_route_point">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/abeezee</item>
+        <item name="android:textColor">@color/myGreen</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">30dp</item>
+    </style>
+    <style name="add_package_field">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/abeezee</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+    </style>
+    <style name="imagebuttons">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:background">@color/background</item>
+    </style>
+
+    <style name="Editexts">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">25dp</item>
+    </style>
+    <style name="EditextsTabed">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">45dp</item>
+    </style>
+    <style name="buttonPrimary">
+        <item name="android:background">@color/myGreen</item>
+        <item name="android:textColor">@color/white</item>
+    <item name="android:fontFamily">@font/abeezee</item>
+    </style>
+    <style name="buttonSecondary">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@color/dark_green</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/abeezee</item>
+    </style>
+</resources>

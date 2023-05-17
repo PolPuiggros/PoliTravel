@@ -1,0 +1,120 @@
+[
+    {
+      "Id": 1,
+      "Name_package": "Barcelona",
+      "Img": "barcelona",
+      "Mean_of_transport": "Cotxe",
+      "Start_point": "Plaça Urquinaona",
+      "Start_point_latitude": 41.389214422376256,
+      "Start_point_longitude": 2.1728386317402855,
+      "Ending_point": "Sagrada Família",
+      "Ending_point_latitude": 41.40357354765511,
+      "Ending_point_longitude": 2.1743987131547526,
+      "DurationOfTheTrip": 1,
+      "Unit": "D",
+      "Interest_points": 
+        [
+            {
+                "Interest_point_name": "Passeig de Gràcia",
+                "Interest_point_latitude": 41.3881874157858,
+                "Interest_point_longitude": 2.170259540138907
+            },
+            {
+                "Interest_point_name": "Plaça Catalunya",
+                "Interest_point_latitude": 41.38715221936648,
+                "Interest_point_longitude": 2.1700685554824313
+            }, 
+            {
+                "Interest_point_name": "Catedral de Barcelona",
+                "Interest_point_latitude": 41.38404247725711,
+                "Interest_point_longitude": 2.1761561824669835
+            }
+        ]
+    },
+    {
+        "Id": 2,
+        "Name_package": "Italy center",
+        "Img": "italy",
+        "Mean_of_transport": "Avio",
+        "Start_point": "Pisa Tower",
+        "Start_point_latitude": 43.72298299361463,
+        "Start_point_longitude": 10.396629184397565,
+        "Ending_point": "Rome Coliseum",
+        "Ending_point_latitude": 41.89020219240025,
+        "Ending_point_longitude": 12.492273813170977,
+        "DurationOfTheTrip": 3,
+        "Unit": "D",
+        "Interest_points": 
+        [
+            {
+                "Interest_point_name": "Florence",
+                "Interest_point_latitude": 43.770965421712035,
+                "Interest_point_longitude": 11.255812601592252
+            },
+            {
+                "Interest_point_name": "Terni",
+                "Interest_point_latitude": 42.56423038182501,
+                "Interest_point_longitude": 12.643170445149094
+            }
+        ]
+      },
+      {
+        "Id": 3,
+        "Name_package": "France",
+        "Img": "france",
+        "Mean_of_transport": "Tren",
+        "Start_point": "Paris",
+        "Start_point_latitude": 48.85702658507421,
+        "Start_point_longitude": 2.3291802935564325,
+        "Ending_point": "Carcassone",
+        "Ending_point_latitude": 43.213163673179075,
+        "Ending_point_longitude": 2.353208887492845,
+        "DurationOfTheTrip": 2,
+        "Unit": "W",
+        "Interest_points": 
+        [
+            {
+                "Interest_point_name": "Nantes",
+                "Interest_point_latitude": 47.34647523779087,
+                "Interest_point_longitude": -1.6139215105792932
+            },
+            {
+                "Interest_point_name": "Bordeus",
+                "Interest_point_latitude": 44.89504470415293,
+                "Interest_point_longitude": -0.58794681480104
+            }
+        ]
+      },
+      {
+        "Id": 4,
+        "Name_package": "Poland Trip",
+        "Img": "poland",
+        "Mean_of_transport": "Barco",
+        "Start_point": "Warsaw",
+        "Start_point_latitude": 52.229490605191444,
+        "Start_point_longitude": 21.04951404223167,
+        "Ending_point": "Katowice",
+        "Ending_point_latitude": 50.22588989796766,
+        "Ending_point_longitude": 19.032591161451766,
+        "DurationOfTheTrip": 1,
+        "Unit": "M",
+        "Interest_points": 
+        [
+            {
+                "Interest_point_name": "Radom",
+                "Interest_point_latitude": 51.44647495615727,
+                "Interest_point_longitude": 21.204893502046133
+            },
+            {
+                "Interest_point_name": "Kielce",
+                "Interest_point_latitude": 50.92481884758646,
+                "Interest_point_longitude": 20.65550097119979
+            },
+            {
+                "Interest_point_name": "Cracòvia",
+                "Interest_point_latitude": 50.112759343060056,
+                "Interest_point_longitude": 19.88773602535783
+            }  
+        ]
+      }
+]
